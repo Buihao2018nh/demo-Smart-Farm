@@ -1,0 +1,154 @@
+/* -------------ghi những thứ không nằm trong trang wed 
+modol... hoặc những thứ dụng chung btn------------- */
+:root{
+    --blue-color: #3fd0d4;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --boder-color: #bdbdbd;
+    /* --header_sort-bar--height: 46px;
+    --navbar-height:34px;
+    --header-height:120px;
+    --header-width-search-height: calc(var(--header-height) - var( --header-width-search-height)); */
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/* texet--- */
+
+/* animation */
+@keyframes INS{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes growth{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+/* modal */
+.modal{
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background: rgba(252, 252, 253, 0.6);
+   align-items: center;
+   justify-content: center;
+   display: none;
+}
+.modal.open{
+    display: flex;
+}
+.modal-container{
+   position: relative;
+    max-width: calc(100% - 32px);
+    min-height: 400px;
+    width: 400px;
+    background:#fff;
+  border-radius: 6px;
+    box-shadow: 2px 3px 4px 3px rgb(92, 91, 91, 0.2);
+    animation: modalfade ease .4s;
+}
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-227px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.modal-close{
+    position:absolute;
+    right: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 10px;
+    color: rgba(96, 103, 113, 0.6)
+}
+.modal-content{
+    
+}
+.modal_header{
+    margin: 15px;
+}
+.modal_heading{
+    font-size:3em;
+    color: rgba(28, 33, 30, 0.9)
+}
+.modal_p{
+    font-size:1.4rem;
+    color: rgba(96, 103, 112, 1)
+}
+.modal_br{
+   display: block;
+   width: 100%;
+    border: 1px solid  rgba(218, 225, 225, 0.9);
+}
+.modal_body{
+    margin-top: 20px;
+    
+}
+.modal_date_sex{
+    display: flex;
+   margin-top: -17px;
+}
+.modal_date{
+    margin: 0 20px;
+    
+}
+#birthdaytime{
+    outline: none;
+
+}
+.modal_p-date{
+    font-size:1.2rem;
+    color: rgba(96, 103, 112, 1);
+   
+}
+#cars{
+    outline: none;
+    padding: 3px;
+}
+.modal_body-lorem{
+    margin: 10px 20px;
+    color: #777777;
+    font-size: 1.1rem;
+}
+.modal_body-link{
+    text-decoration: none;
+    color: rgb(72, 47, 182,1);
+}
+.modal_btn{
+   text-align: center;
+   margin: 20px 100px;
+   background-color: #00a400;
+   border-radius: 4px;
+  cursor: pointer;
+}
+.modal_btn-link{
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    color: #fff;
+    padding: 12px 32px;
+}

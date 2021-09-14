@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.css" integrity="sha512-+BYMzqWPGdpv0FljRUI2S5tTMqJyE9tgnbY8DqMseCIs6EbwSehRnLmuoAZSfYFxzcjhpagE+ubwBLaBIH/OHg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/login/css/nguoidung.css">
+    <title>Quản lý người dùng</title>
+</head>
+<body>
+    <div class="wrapper-bootstrap">
+        <!----------------- Side-------------------bar ----------->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h2 class="sidebar_collapse">Smart Farm</h2> 
+            </div>
+            <ul class="list-unstyled">
+                <li><a href="index.html"><i class="fas fa-tasks"></i> Trang trại Trái Cây</a></li>
+                <li><a href="nguoidung.html" style="background-color:#19df19; color:#fff;"><i class="fas fa-users"></i> Quản lý người dùng</a></li>
+                <li><a href=""><i class="fas fa-balance-scale"></i> Quản lý mùa vụ</a></li>
+                <li><a href=""><i class="fas fa-american-sign-language-interpreting"></i> Quản lý công việc</a></li>
+                <li><a href=""><i class="fas fa-tachometer-alt"></i> Quản lý thiết bị</a></li>
+                <li><a href=""><i class="sidebar_item-icon fas fa-cog"></i> Cài đặt chung</a></li>
+            </ul>
+        </nav>
+     <!-------------------------- content----------------------------------------------->
+    <div id="content">
+        <header class="row" >
+            <div class="col toggler-btn">
+                <button class="btn d-md-none bg-main" id="sidebarCollapse"><i class="fas fa-align-left"></i></button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <ul class="nav">
+                    <li class="nav-item"><a href="" class="nav-link"><i class="far fa-paper-plane" style="color: black"></i></a> </li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="far fa-bell" style="color: black"></i></a> </li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="far fa-user-circle" style="color: black"></i>
+                    </a></li>
+                
+                </ul>
+            </div>
+        </header>
+        <!--  -->
+        <div class="page-breadcrumb">
+            <div class="row ml-3 mt-3">
+                <h3 class="page-title">Quản lý người dùng:</h3>
+            </div>
+        </div>
+      
+      <div class="container ">
+          <div class="row">
+         <div class="col-sm-12 col-md-6 text-center" style="box-shadow: 3px  3px 3px gray; ">
+          <div class="tp-row1">
+        <div class="them">
+            <h1><i class="fas fa-user-edit"  style="color: white;"></i></h1>
+           
+           </div>
+        </div>
+        <h5>Tổng số người dùng: 0</h5>
+    </div>
+    <div class="col-sm-12 col-md-6 text-center" style="box-shadow: 3px  3px 3px gray;">
+    <div class="tp-row1">
+        <div class="delet">
+            <h1><i class="fas fa-user-times"  style="color: white;"></i></h1>
+          
+           </div>
+        </div>
+        <h5>Tổng số  đã xóa: 0</h5>
+     </div>
+    </div>
+
+       <!---------------- đang lam mẩu --------------------->
+          <div class="content_body">
+           <div class="row ml-3 m-4">
+               <div class="col ">
+                <div id="Them">
+                    <button class="them_btn" data-toggle="modal" data-target="#exampleModalCenter" ><i class="fas fa-plus-circle"></i> Thêm người dùng</button>
+                </div>
+                
+               </div>
+               <div class="col">
+               <div class="input-group">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                  aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary" >
+                    <i class="fas fa-search" ></i>
+                  </button>
+              </div>
+               </div>
+           </div>
+           <div id="main-all">
+            <table class="table">
+              <thead>
+                  <tr >
+                      <th>ID</th>
+                      <th>Tên người dùng</th>
+                      <th>Giới tính</th>
+                      <th>Ngày tạo</th>
+                      <th>Vai trò</th>
+                      <th>Địa chỉ</th>
+                      <th>Chức năng</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <td style="text-align: center;" colspan="10"><img style="height: 100px" src="img/spinner.gif" alt="">
+                  </td>
+              </tbody>
+          </table>
+          </div>
+
+        </div>
+    </div>
+    </div>
+    <!----------------------------------------- sử dụng của bootstrap ---------------------------->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"><span><h3 style="font-weight: bold;">Nhập Thông Tin Người Dùng</h3></span><span class="stt" style="display: none;"></span></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close" >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                 
+                    <div class="form-group">
+                        <label>Tên</label>
+                        <input id="ten" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Giới tính</label>
+                        <select  id="gioi_tinh" type="text" class="form-control">
+                            <option value="" selected>...</option>
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                         </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày Tạo</label>
+                        <input id="ngay_tao" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Vai Trò</label>
+                        <select  id="vai_tro" type="text" class="form-control">
+                            <option value="" selected>...</option>
+                            <option value="admin">admin</option>
+                            <option value="Project">Project </option>
+                            <option value="Customer">Customer</option>
+                            <option value="Gebruikers">Gebruikers</option>
+                            <option value="Staff">Staff</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ</label>
+                        <input id="trang_thai" type="text" class="form-control">
+                    </div>
+                    <div id="modal-loading "  class="modal-footer" style="margin-left: 300px; ">
+                        <button type="button" class="btn btn-secondary"   style="display: block; " onclick="closee()" id="delet" >Hủy</button>
+                        <button type="button" class="btn btn-primary " id="submit">Thêm</button>
+                    </div>
+                </form>
+            </div>
+            <div id="modal-loading2" class="modal-footer" style="display: none; margin-left: 300px;">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closee()" id="closee">Hủy</button>
+                <button type="button" class="btn btn-primary" onclick="savesua()" id="submit" style="width: 35%;" >Sửa</button>
+            </div>
+        </div>
+    </div>
+</div> 
+
+       <!-- Font Awesome JS -->
+       <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+       <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+       <!-- jQuery CDN - Slim version (=without AJAX) -->
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <!-- Popper.JS -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+       <!-- Bootstrap JS -->
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+       <script src="/login/js/nguoidung.js"></script>
+</body>
+</html>

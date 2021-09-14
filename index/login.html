@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/login/css/style.css">
+    <link rel="stylesheet" href="/login/css/gird.css">
+    <link rel="stylesheet" href="/login/css/login.css">
+
+</head>
+<body>
+    <div class="app">
+        <div class="gird wide">
+             <div class="header">
+                 <div class="header_img">
+                    <img class="header_img-list" src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/iauQmlDrivH.png" alt="" width="320" height="400">
+                    <h2 class="header_lorem">Cảm ơn bạn đã ghé thăm!</h2>
+                    <h2 class="header_lorem">Chúng tôi mong sớm gặp lại bạn.</h2>
+                 </div>
+                  <div class="header_login">
+                      <div class="header_logo">
+                        <img src="/login/img/logomoi.jpg" alt="" style="width: 150px">
+                      </div>
+                      <div class="header-item">
+                        <i class="header_icon fas fa-user"></i>
+                         <input type="text" id="name" name="name" class="header_input" placeholder="Tài khoản">
+                      </div>
+                      <div class="header-item-list">
+                        <div id="error" ><i class="fas fa-exclamation-triangle"></i> Hãy nhập Email hoặc số điện thoại của bạn!</div>
+                        <!-- <div id="loi1"><i class="fas fa-exclamation-triangle"></i> Yêu cầu nhập trên 4 Ký tự!</div> -->
+                      <div class="header-item">
+                        <i class="header_icon fas fa-lock"></i>
+                         <input type="password" id="pass" name="pass" class="header_input" placeholder="Mật khẩu">
+                      </div>
+                      <div class="header-item-list">
+                        <div id="error1"><i class="fas fa-exclamation-triangle"></i>Nhập mật khẩu của bạn!</div>
+                        <!-- <div id="loi2" ><i class="fas fa-exclamation-triangle"></i> Yêu cầu nhập trên 8 Ký tự!</div> -->
+                        <div id="false"><i class="fas fa-exclamation-triangle"></i>Mật khẩu hoặc tài khoản không chính xác. Hãy thử lại hoặc nhấp vào "Bạn quên mật khẩu" để đặt lại mật khẩu.!</div>
+                      </div>
+                       </div>   
+                        <button  class="header_btn">
+                            <h3  class="header_btn-login"  type="submit" name="submit" id="submit" >Đăng Nhập</h3>
+                        </button>
+                   
+                     
+                     <a href="" style="text-decoration: none;"><span class="header_login-span">Quên mật khẩu?</span></a> 
+                     <span class="header_btn-br"></span>
+                      <div class="header_btn1">
+                     <href href="" style="text-decoration: none;"> <span class="header_login-DK js-by-tickets">Tạo tài khoản mới</span>
+                      </div>
+                  </div>
+             </div>
+        </div>
+    </div>
+    <div class="modal js-modal" > 
+      <div class="modal-container js-modal-container">
+        <div class="modal-close js-modal-close">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="modal-content">
+          <div class="modal_header">
+          <h1 class="modal_heading">Đăng Ký</h1>
+          <p class="modal_p">Nhanh chóng và dễ dàng.</p>
+        </div>
+        <span class="modal_br"></span>
+        <div class="modal_body">
+          <div class="header-item">
+            <i class="header_icon fas fa-user"></i>
+             <input type="text" class="header_input" placeholder="Tài khoản">
+          </div>
+          <div class="header-item">
+            <i class="header_icon fas fa-lock"></i>
+             <input type="password" class="header_input" placeholder="Mật khẩu">
+          </div>
+          <div class="header-item">
+            <i class="header_icon fas fa-lock"></i>
+             <input type="password" class="header_input" placeholder="Nhập lại mật khẩu">
+          </div>
+           <div class="modal_date_sex">
+          <div class="modal_date">
+            <p class="modal_p-date">Ngày sinh <i class="fas fa-question-circle"></i></p>
+          <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        </div>
+        <div class="modal_sex">
+          <p class="modal_p-date">Giới tính <i class="fas fa-question-circle"></i></p>
+          <select name="cars" id="cars">
+            <option value=".....">.....</option>
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+            <option value="Giới tính khác">Giới tính khác</option>
+          </select>
+          </div>
+        </div>
+          <p class="modal_body-lorem">Bằng cách nhấp vào Đăng ký, bạn đồng ý với  <a href="" class="modal_body-link">Điều khoản</a> , <a href="" class="modal_body-link">Chính sách dữ liệu</a> và <a href="" class="modal_body-link">Chính sách ThoMi Farm</a> của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.
+          </p>
+          <div class="modal_btn">
+              <a href="" class="modal_btn-link">Đăng Ký</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+    <script src="/login/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* ------------ tablet and mobile --------------------- */
+@media (max-width:1023px){
+    .content_right {
+        margin: 20px 0px 0 0;
+    }
+}
+/* --------------------- tablet ---------------------- */
+@media (min-width:740px) and (max-width:1023px){
+   
+}
+/* ---------------- mobile------------ */
+@media (max-width:739px){
+
+    .header_heading{
+        font-size: 2rem;
+    }
+}
+/* pc */

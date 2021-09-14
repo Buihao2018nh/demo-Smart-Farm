@@ -1,0 +1,102 @@
+
+#content {
+    width: 100%;
+}
+
+.wrapper-bootstrap{
+    display: flex;
+    align-items: stretch;
+    
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+
+    color: black;
+    /* Hieu ung di chuyen */
+    transition: all 0.3s;
+    box-shadow: 4px 4px 4px  gray;
+}
+/** CHON THE a ul li nằm trong sidebar **/
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+#sidebar ul li a:hover{
+    color: #fff;
+    background-color:  #19df19;
+    
+}
+/* content */
+
+header{
+
+    margin-left: 0px !important;
+    box-shadow: 4px 4px 4px  gray;
+}
+header .nav-link{
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 44px;
+}
+.toggler-btn{
+    line-height: 64px;
+}
+.bg-main{
+    background-color: #cdd6cb;
+
+}
+
+
+@media (max-width: 800px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0px;
+    }
+  
+}
+.them{
+    background: rgb(99, 99, 230);
+    border-radius: 10px;
+    padding: 10px;
+    width: 75px;
+    box-shadow: 3px 3px 3px 3px gray;
+    
+}
+.them_btn{
+    outline: none;
+    border: none;
+    background-color: #10df10;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.them_btn:hover{
+    background-color: #5fcc5f;
+    
+}
+.delet{
+    background: rgb(199, 23, 23);
+    border-radius: 10px;
+    padding: 10px;
+    width: 75px;
+    box-shadow: 3px 3px 3px 3px gray;
+        
+}
+.sidebar_collapse{
+    color: #19df19;
+    margin: 0 0 0 30px;
+    font-weight: 600;
+    font-size: 2.3rem;
+    letter-spacing: 0.5;
+}

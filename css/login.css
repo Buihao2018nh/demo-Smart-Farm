@@ -1,0 +1,119 @@
+html{
+    background: #edf0f5;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-top:50px;
+}
+.header_lorem{
+    text-align: center;
+    font-size: 2rem;
+    color: #3b59a4;
+    font-weight: 700;
+}
+.header_logo{
+    text-align: center;
+}
+.header_login{
+    background: var(--white-color);
+    width: 40%;
+    border-radius: 3%;
+    box-shadow: 2px 3px 4px 3px rgb(92, 91, 91, 0.2);
+ 
+}
+.header-item{
+    border: 1px solid #dadde1;;
+    border-radius: 2%;
+    display:flex;
+    margin: 0 20px 20px 20px;
+    justify-content: center;
+    
+}
+.header-item-list{
+   margin-top: 20px;
+}
+.header_input{
+    padding: 10px;
+    width: 100%;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+}
+.header_icon{
+    line-height: 30px;
+    padding: 10px;
+    font-size: 1.5rem;
+    background: #98a597;
+}
+.header_btn{
+  margin: 0 20px;
+  width: 92%; 
+  border: none;
+  background: #1877f2;
+  border-radius:3px;
+  cursor: pointer;
+}
+.header_btn:hover{
+    background: #2878e2;
+}
+.header_btn-login{
+    text-align: center;
+    color: var(--white-color);
+    font-size: 2.2rem;
+    margin: 10px 0;
+    border: none;
+  
+}
+.header_login-span{
+    text-align: center;
+    display: block;
+    margin: 15px 0;
+    font-size: 1.3rem;
+    color: #18a4f7;
+}
+.header_btn-br{
+    text-align: center;
+    border-bottom: 1px solid #dadde1;
+   width: 92%;
+   display: block;
+   margin: 20px 20px 0 20px;
+   
+}
+.header_btn1{
+    width: 76%;
+    margin: 20px 60px 0 60px;
+    background: #42b72a;
+    border-radius: 3px;
+}
+.header_login-DK{
+   text-align: center;
+   display: block;
+   margin-top: 30px;
+   font-size: 1.4rem;
+   font-weight: 800;
+   color: var(--white-color);
+   padding: 10px;
+   cursor: pointer;
+}
+.header_login-DK:hover{
+    background: #34c717;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#error, #error1{
+   margin: 0 20px 20px 50px;
+    font-size: 1.2rem;
+    color: red;
+    display:none;
+
+}
+#loi1, #loi2, #false, #false1{
+    margin: 0 20px 20px 50px;
+    font-size: 1.4rem;
+    color: red;
+    display:none;
+}
+
